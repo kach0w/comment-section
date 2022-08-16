@@ -57,7 +57,7 @@ function addWord(req, res) {
   // Word and score
   var word = req.params.word;
   // Make sure it's not a string by accident
-  var score = Number(req.params.score);
+  var score = req.params.score;
 
   // Put it in the object
   words[word] = score;
